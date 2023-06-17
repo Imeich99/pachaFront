@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hackaton 10</title>
+    <meta name="description" content="Ejercicios Resueltos de la Hackaton 09">
+    <meta name="author" content="EnriqueMaldonadoH">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-fluid bg_principal">
+        <div class="row jumbotron bg_secundario"> <!-- Titulo --> 
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-11">        
+                    <h2>
+                        Hackaton 10
+                    </h2>
+                    <p>
+                        Solución a los ejercicios de la Hackaton 10
+                    </p>
+                    <p>
+                        <a class="btn btn-primary btn-large" href="#">Ver</a>
+                    </p>       
+            </div>
+        </div>
+        <div class="row excercise">  <!-- Ejercicio 01 -->
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2">
+                        <dl> 
+                            <dt>
+                                Ejercicio 01
+                            </dt>
+                            <dd>
+                                Utilizando función arrow, crear una función que reciba como parámetros un nombre, 
+                                apellido y edad y los retorne en un string concatenado 
+                                “Hola mi nombre es sebastián yabiku y mi edad 33”
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-2">
+                        <picture>
+                            <img alt="Bootstrap Image Preview" src="imgs/suma.png" class="ejemplo mx-auto d-block" />
+                        </picture>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row"> 
+                            <div class="col-md-6">
+                                <label for="nro01">
+                                    Primer Número
+                                </label>
+                                <input id="nro01" type="text" class="form-control">
+                                <br>
+                                <button id="eje01" onclick="ejercicio01()" class="btn btn-success">
+                                    Sumar
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="nro02">
+                                    Segundo Número
+                                </label>
+                                <input id="nro02" type="text " class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <blockquote class="blockquote">
+                            <label id="rpt01" for=""></label>
+                            <footer class="blockquote-footer">
+                                Aquí aparecerá la respuesta <cite> cuando se utilice el botón </cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="row excercise"> <!-- Ejercicio 02 -->
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2">
+                        <dl> 
+                            <dt>
+                                Ejercicio 02
+                            </dt>
+                            <dd>
+                                Un estudiante realiza 4 exámenes, calcular el promedio de estos
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-2">
+                        <picture>
+                            <img alt="Bootstrap Image Preview" src="imgs/promedio.png" class="ejemplo mx-auto d-block" />
+                        </picture>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row"> 
+                            <div class="col-md-3">
+                                <label for="nt01">
+                                    Primera Nota
+                                </label>
+                                <input id="nt01" type="text" class="form-control">
+                                <br>
+                                <button id="eje02" onclick="ejercicio02()" class="btn btn-success">
+                                    Promediar
+                                </button>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="nt02">
+                                    Segunda Nota
+                                </label>
+                                <input id="nt02" type="text" class="form-control">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="nt03">
+                                    Tercera Nota
+                                </label>
+                                <input id="nt03" type="text" class="form-control">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="nt04">
+                                    Cuarta Nota
+                                </label>
+                                <input id="nt04" type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <blockquote class="blockquote">
+                            <label id="rpt02" for=""></label>
+                            <footer class="blockquote-footer">
+                                Aquí aparecerá la respuesta <cite> cuando se utilice el botón </cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="row excercise"> <!-- Ejercicio 03 -->
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2">
+                        <dl> 
+                            <dt>
+                                Ejercicio 03
+                            </dt>
+                            <dd>
+                                Calcular el área de un rectángulo
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-2">
+                        <picture>
+                            <img alt="Bootstrap Image Preview" src="imgs/rectangulo.png" class="ejemplo mx-auto d-block" />
+                        </picture>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row"> 
+                            <div class="col-md-6">
+                                <label for="altura">
+                                    Altura del Rectángulo
+                                </label>
+                                <input id="altura" type="text" class="form-control">
+                                <br>
+                                <button id="eje03" onclick="ejercicio03()" class="btn btn-success">
+                                    Calcular Área
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="ancho">
+                                    Base del Rectángulo
+                                </label>
+                                <input id="ancho" type="text " class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <blockquote class="blockquote">
+                            <label id="rpt03" for=""></label>
+                            <footer class="blockquote-footer">
+                                Aquí aparecerá la respuesta <cite> cuando se utilice el botón </cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="row excercise"> <!-- Ejercicio 04 -->
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2">
+                        <dl> 
+                            <dt>
+                                Ejercicio 04
+                            </dt>
+                            <dd>
+                                Calcular el área de un triángulo
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-2">
+                        <picture>
+                            <img alt="Bootstrap Image Preview" src="imgs/triangulo.png" class="ejemplo mx-auto d-block" />
+                        </picture>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row"> 
+                            <div class="col-md-6">
+                                <label for="altura-tr">
+                                    Altura del Triangulo
+                                </label>
+                                <input id="altura_tr" type="text" class="form-control">
+                                <br>
+                                <button id="eje04" onclick="ejercicio04()" class="btn btn-success">
+                                    Calcular Área
+                                </button>
+                            </div>
+                        <div class="col-md-6">
+                            <label for="base_tr">
+                                Base del Triángulo
+                            </label>
+                            <input id="base_tr" type="text " class="form-control">
+                        </div>  
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <blockquote class="blockquote">
+                            <label id="rpt04" for=""></label>
+                            <footer class="blockquote-footer">
+                                Aquí aparecerá la respuesta <cite> cuando se utilice el botón </cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="row excercise"> <!-- Ejercicio 05 -->
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2">
+                        <dl> 
+                            <dt>
+                                Ejercicio 05
+                            </dt>
+                            <dd>
+                                Calcular el área de una circunferencia
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-2">
+                        <picture>
+                            <img alt="Bootstrap Image Preview" src="imgs/circunferencia.png" class="ejemplo mx-auto d-block"    />
+                        </picture>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row"> 
+                            <div class="col-md-12">
+                                <label for="radio_circu">
+                                    Radio de la Circunferencia
+                                </label>
+                                <input id="radio_circu" type="text" class="form-control">
+                                <br>
+                                <button id="eje04" onclick="ejercicio05()" class="btn btn-success">
+                                    Calcular Área
+                                </button>
+                            </div>             
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <blockquote class="blockquote">
+                            <label id="rpt05" for=""></label>
+                            <footer class="blockquote-footer">
+                                Aquí aparecerá la respuesta <cite> cuando se utilice el botón </cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="row excercise center"> <!-- Ejercicio 06 -->
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2">
+                        <dl> 
+                            <dt>
+                                Ejercicio 06
+                            </dt>
+                            <dd class="parrafo">
+                                Determinar el sueldo semanal de un trabajador basándose en sus horas trabajadas y su salario de hora hombre
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-2">
+                        <picture>
+                            <img alt="Bootstrap Image Preview" src="imgs/salario.png" class="mx-auto d-block img-thumbnail ejemplo"/>
+                        </picture>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row"> 
+                            <div class="col-md-12">
+                                <label for="horas_tr">
+                                    Horas Trabajadas
+                                </label>
+                                <input id="horas_tr" type="text" class="form-control">
+                                <br>
+                                <button id="eje06" onclick="ejercicio06()" class="btn btn-success">
+                                    Calcular Sueldo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <blockquote class="blockquote">
+                            <label id="rpt06" for=""></label>
+                            <footer class="blockquote-footer">
+                                Aquí aparecerá la respuesta <cite> cuando se utilice el botón </cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="row excercise"> <!-- Ejercicio 07 -->
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2">
+                        <dl> 
+                            <dt>
+                                Ejercicio 07
+                            </dt>
+                            <dd class="parrafo">
+                                Una modista, para realizar sus prendas de vestir, encarga las telas al extranjero. 
+                                Para cada pedido, tiene que proporcionar las medidas de la tela en pulgadas, pero ella generalmente las tiene en metros.
+                                Realice un algoritmo para ayudar a resolver el problema, determinando cuantas pulgadas debe pedir con base en los metros que requiere.
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-2">
+                        <picture>
+                            <img alt="Bootstrap Image Preview" src="imgs/tela.png" class="mx-auto d-block img-thumbnail ejemplo"/>
+                        </picture>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row"> 
+                            <div class="col-md-12">
+                                <label for="metros_tela">
+                                    Metros de Tela a Solicitar
+                                </label>
+                                <input id="metros_tela" type="text" class="form-control">
+                                <br>
+                                <button id="eje07" onclick="ejercicio07()" class="btn btn-success">
+                                    Calcular Tela
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <blockquote class="blockquote">
+                            <label id="rpt07" for=""></label>
+                            <footer class="blockquote-footer">
+                                Aquí aparecerá la respuesta <cite> cuando se utilice el botón </cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="row excercise"> <!-- Ejercicio 08 -->
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2">
+                        <dl> 
+                            <dt>
+                                Ejercicio 08
+                            </dt>
+                            <dd class="parrafo">
+                                Una empresa importadora desea determinar cuántos dólares puede adquirir con equis cantidad de dinero peruano.
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-2">
+                        <picture>
+                            <img alt="Bootstrap Image Preview" src="imgs/dolares.png" class="mx-auto d-block img-thumbnail ejemplo"/>
+                        </picture>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row"> 
+                            <div class="col-md-12">
+                                <label for="soles">
+                                    Dinero en soles a convertir
+                                </label>
+                                <input id="soles" type="text" class="form-control">
+                                <br>
+                                <button id="eje08" onclick="ejercicio08()" class="btn btn-success">
+                                    Convertir a Dolares
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <blockquote class="blockquote">
+                            <label id="rpt08" for=""></label>
+                            <footer class="blockquote-footer">
+                                Aquí aparecerá la respuesta <cite> cuando se utilice el botón </cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="row excercise"> <!-- Ejercicio 09 -->
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2">
+                        <dl> 
+                            <dt>
+                                Ejercicio 09
+                            </dt>
+                            <dd class="parrafo">
+                                Una empresa que contrata personal requiere determinar la edad de las personas que solicitan trabajo,
+                                pero cuando se les realiza la entrevista sólo se les pregunta el año en que nacieron
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-2">
+                        <picture>
+                            <img alt="Bootstrap Image Preview" src="imgs/edad.png" class="mx-auto d-block img-thumbnail ejemplo"/>
+                        </picture>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row"> 
+                            <div class="col-md-12">
+                                <label for="fch_nacimiento">
+                                    Fecha de Nacimiento
+                                </label>
+                                <input id="fch_nacimiento" type="date" class="form-control">
+                                <br>
+                                <button id="eje09" onclick="ejercicio09()" class="btn btn-success">
+                                    Calcular Edad
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <blockquote class="blockquote">
+                            <label id="rpt09" for=""></label>
+                            <footer class="blockquote-footer">
+                                Aquí aparecerá la respuesta <cite> cuando se utilice el botón </cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="row excercise"> <!-- Ejercicio 10 -->
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2">
+                        <dl> 
+                            <dt>
+                                Ejercicio 10
+                            </dt>
+                            <dd class="parrafo">
+                                Se tiene el nombre y la edad de tres personas. Se desea saber el nombre y la edad de la persona de menor edad
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-2">
+                        <picture>
+                            <img alt="Bootstrap Image Preview" src="imgs/edades2.png" class="mx-auto d-block img-thumbnail ejemplo"/>
+                        </picture>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row"> 
+                            <div class="col-md-6">
+                                <label for="nombre_1">
+                                    Persona 1 
+                                </label>
+                                <input id="nombre_1" type="text" class="form-control">
+                                <br>
+                                <label for="nombre_2">
+                                    Persona 2
+                                </label>
+                                <input id="nombre_2" type="text" class="form-control">
+                                <br>
+                                <label for="nombre_3">
+                                    Persona 3
+                                </label>
+                                <input id="nombre_3" type="text" class="form-control">
+                                <br>
+                                <button id="eje10" onclick="ejercicio10()" class="btn btn-success">
+                                    Calcular al Menor
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="edad_1">
+                                    Edad de la Persona 1
+                                </label>
+                                <input id="edad_1" type="text" class="form-control">
+                                <br>
+                                <label for="edad_2">
+                                    Edad de la Persona 2
+                                </label>
+                                <input id="edad_2" type="text" class="form-control">
+                                <br>
+                                <label for="edad_3">
+                                    Edad de la Persona 3
+                                </label>
+                                <input id="edad_3" type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <blockquote class="blockquote">
+                            <label id="rpt10" for=""></label>
+                            <footer class="blockquote-footer">
+                                Aquí aparecerá la respuesta <cite> cuando se utilice el botón </cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="row excercise"> <!-- Ejercicio 11 -->
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2">
+                        <dl> 
+                            <dt>
+                                Ejercicio 11
+                            </dt>
+                            <dd class="parrafo">
+                                Se les dará un bono por antigüedad a los empleados de una tienda. 
+                                Si tienen un año, se les dará $100; si tienen 2 años, $200, y así sucesivamente hasta los 5 años. 
+                                Para los que tengan más de 5, el bono será de $1000. 
+                                Realice un algoritmo y represéntelo ,que permita determinar el bono que recibirá un trabajador
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-2">
+                        <picture>
+                            <img alt="Bootstrap Image Preview" src="imgs/bono.png" class="mx-auto d-block img-thumbnail ejemplo"/>
+                        </picture>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row"> 
+                            <div class="col-md-12">
+                                <label for="anios_antg">
+                                    Años de Antiguedad
+                                </label>
+                                <br>
+                                <input type="text" id="anios_antg" />
+                                <br><br>
+                                <button onclick="ejercicio11()" class="btn btn-success">
+                                    Calcular Bono
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <blockquote class="blockquote">
+                            <label id="rpt11" for=""></label>
+                            <footer class="blockquote-footer">
+                                Aquí aparecerá la respuesta <cite> cuando se utilice el botón </cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="row excercise"> <!-- Ejercicio 12 -->
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2">
+                        <dl> 
+                            <dt>
+                                Ejercicio 12
+                            </dt>
+                            <dd class="parrafo">
+                                Un profesor tiene un salario inicial de $1500, y recibe un incremento de 10 % anual durante 6 años. ¿Cuál es su salario al cabo de 6 años? 
+                                ¿Qué salario ha recibido en cada uno de los 6 años? Realice el algoritmo y representan la solución, utilizando el ciclo apropiado
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-2">
+                        <picture>
+                            <img alt="Bootstrap Image Preview" src="imgs/aumento.png" class="mx-auto d-block img-thumbnail ejemplo"/>
+                        </picture>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row"> 
+                            <div class="col-md-12">
+                                <label for="salarioInicial">
+                                    Salario inicial:
+                                </label>
+                                <input type="text" id="salarioInicial" value="1500" disabled />
+                                <br><br>
+                                <button onclick="ejercicio12()" class="btn btn-success">
+                                    Calcular Aumento
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <blockquote class="blockquote">
+                            <label id="resultadoSalario" for=""></label>
+                            <label id="resultadoSalariosPorAnio" for=""></label>
+                            <footer class="blockquote-footer">
+                                Aquí aparecerá la respuesta <cite> cuando se utilice el botón </cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

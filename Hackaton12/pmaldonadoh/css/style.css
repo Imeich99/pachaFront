@@ -1,0 +1,44 @@
+.dropdown {
+    text-decoration: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.dropdown:hover {
+    background-color: black;
+}
+
+li {
+    list-style: none;
+    padding: 10px 0px;
+    cursor: pointer;
+    scroll-padding-block-start: 0px;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+li:hover{
+    background-color: skyblue;
+    color: white;
+}
+
+ul {
+    display: flex;
+    flex-flow: column;
+    border: 2px solid blue;
+    border-radius: 10px;
+    width: 10%;
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.marco {
+    box-sizing: border-box;
+    border: 1px solid #A1A1A1;
+    box-shadow: 2px 2px 5px #000000;
+    width: 90%;
+    height: 40vh;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr 0.2fr; 
+    grid-template-rows: 0.3fr 1fr 1fr; 
+    gap: 35px 35px; 
+    grid-template-areas: 
+      "Dog-Crud Dog-Crud Dog-Crud Dog-Crud Dog-Crud Dog-Crud"
+      ". . . . . ."
+      ". . . . . ."; 
+    justify-items: stretch; 
+    align-items: stretch; 
+  }
+  .Dog-Crud {
+    display: grid; 
+    grid-template-columns: 0.6fr 2fr 0.4fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . ."
+      "Title . Agregar"
+      ". . ."; 
+    grid-area: Dog-Crud; 
+  }
+  .Title { grid-area: Title; margin-left: 100px; font-family: Roboto; font-size: 24px; height: 2vh;}
+  .Agregar { grid-area: Agregar; }
+
+  .encabezado {
+    background-color: #E5E5E5;
+  }
